@@ -1,0 +1,67 @@
+body {
+  background-image: url(./assets/slider-banner-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  position: relative;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  width: 500px;
+}
+.login-container h1 {
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 50px);
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.group input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  border: 1px solid gray;
+}
+.group input:focus{
+    outline: none;
+}
+.group label {
+  margin-bottom: 10px;
+}
+.button {
+  margin-top: 20px;
+  background-color: #f66960;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+.group p {
+    position: absolute;
+    bottom: -10px;
+    color: #f66960;
+    left: 0px;
+}
+input.error{
+    border-color: #f66960;
+}
